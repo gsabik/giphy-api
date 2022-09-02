@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { FavoritesContext } from "../context/FavoritesContext";
 import NavBar from "./NavBar";
 import NothingInFavorites from "./NothingInFavorites";
+import { AiFillStar } from "react-icons/ai";
 
 const Favorites = () => {
     const { favorites, deleteAllFavorites, deleteGif } = useContext(FavoritesContext);
@@ -9,7 +10,6 @@ const Favorites = () => {
     return (
         <>
             <NavBar/>
-
             <div className="max-w-screen-xl mx-auto">
                 {
                     favorites.length === 0
@@ -23,8 +23,17 @@ const Favorites = () => {
                                 src={img}
                             />
                             <div className="flex flex-row  justify-between w-3/4">
-                                <p className="text-lg text-center text-gray-500 truncate w-2/6">{url}</p>
-                                <button onClick={() => deleteGif(id)}>Delete</button>
+                            <a 
+                                href={url} 
+                                className="text-lg text-center text-gray-500 truncate w-2/6" 
+                                rel="noopener" 
+                                target="_blank"
+                            >{url}</a>
+                                <button 
+                                    onClick={() => deleteGif(id)}
+                                >
+                                    <AiFillStar size={20}/>
+                                </button>
                             </div>
                         </div>
                     ))

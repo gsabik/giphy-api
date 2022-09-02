@@ -23,7 +23,12 @@ const GifCard = ({ id, user, url, img }) => {
                 src={img}
             />
             <div className="flex flex-row  justify-between w-3/4">
-                <p className="text-lg text-center text-gray-500 truncate w-2/6">{url}</p>
+                <a 
+                    href={url} 
+                    className="text-lg text-center text-gray-500 truncate w-2/6" 
+                    rel="noopener" 
+                    target="_blank"
+                >{url}</a>
                 {
                     isInFavorites(id)
                     ?
