@@ -14,9 +14,9 @@ const InputCategory = ({ setCategory }) => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className="w-full" onSubmit={handleSubmit}>
             <input
-                className="p-2 rounded-md bg-gray-700"
+                className="p-2 rounded-md bg-gray-700 w-full"
                 type="text"
                 onChange={handleInputChange}
                 placeholder="Search gif"

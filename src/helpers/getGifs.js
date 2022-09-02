@@ -5,8 +5,9 @@ const getGifs = async(category) => {
 
     const gifs = data.map(gif => ({
         id: gif.id,
-        url: gif.url,
-        img: gif.images.downsized_medium.url
+        title: gif.title,
+        img: gif.images.downsized_medium.url,
+        url: gif.url
     }));
 
     return gifs;

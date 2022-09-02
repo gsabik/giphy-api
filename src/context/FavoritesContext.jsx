@@ -13,7 +13,7 @@ export const FavoritesProvider = ({ children }) => {
         setFavorites([...favorites, gif])
     }
 
-    //Comment
+    //Check that a gif is already in favorites
     const isInFavorites = (id) => {
         return favorites.some(gif => gif.id === id)
     }

@@ -8,7 +8,8 @@ const GifGrid = ({ category }) => {
     console.log(gifs);
     
     return (
-        <div className="max-w-screen-xl mx-auto">
+        <div className="flex flex-col py-4">
+            <h2 className="text-2xl font-semibold pt-4">Trending</h2>
             {
                 isLoading
                 ?
@@ -21,7 +22,7 @@ const GifGrid = ({ category }) => {
                     />
                 ))
             }
-        </div>
+        </div >
     )
 }
 

@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { FavoritesContext } from "../context/FavoritesContext";
 import { AiOutlineStar, AiFillStar } from "react-icons/ai";
 
-const GifCard = ({ id, user, url, img }) => {
+const GifCard = ({ id, title, img, url }) => {
     const { addToFavorites, isInFavorites, deleteGif } = useContext(FavoritesContext);
 
     const handleAddToFavorites = () => {
@@ -19,10 +19,11 @@ const GifCard = ({ id, user, url, img }) => {
     return (
         <div className="flex flex-col items-center py-4 space-y-4">
             <img
-                className="w-3/4 rounded-lg"
+                alt={title}
+                className="w-full rounded-lg"
                 src={img}
             />
-            <div className="flex flex-row  justify-between w-3/4">
+            <div className="flex flex-row justify-between w-full">
                 <a 
                     href={url} 
                     className="text-lg text-center text-gray-500 truncate w-2/6" 
