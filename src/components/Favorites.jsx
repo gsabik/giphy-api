@@ -1,8 +1,8 @@
 import { useContext } from "react";
+import { AiFillStar } from "react-icons/ai";
 import { FavoritesContext } from "../context/FavoritesContext";
 import NavBar from "./NavBar";
 import NothingInFavorites from "./NothingInFavorites";
-import { AiFillStar } from "react-icons/ai";
 
 const Favorites = () => {
     const { favorites, deleteAllFavorites, deleteGif } = useContext(FavoritesContext);
@@ -47,7 +47,7 @@ const Favorites = () => {
                 </div>
             }
         </div>
-    )
+    );
 }
 
 export default Favorites

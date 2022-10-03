@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { FavoritesContext } from "../context/FavoritesContext";
 import { AiOutlineStar, AiFillStar } from "react-icons/ai";
+import { FavoritesContext } from "../context/FavoritesContext";
 
 const GifCard = ({ id, title, img, url }) => {
     const { addToFavorites, isInFavorites, deleteGif } = useContext(FavoritesContext);
@@ -47,7 +47,7 @@ const GifCard = ({ id, title, img, url }) => {
                 }
             </div>
         </div>
-    )
+    );
 }
 
 export default GifCard

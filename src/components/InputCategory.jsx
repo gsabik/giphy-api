@@ -23,7 +23,7 @@ const InputCategory = ({ setCategory }) => {
                 value={inputValue}
             />
         </form>
-    )
+    );
 }
 
 export default InputCategory

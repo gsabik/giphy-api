@@ -6,7 +6,7 @@ const NothingInFavorites = () => {
             <h2 className="text-3xl">Nothing in favorites!</h2>
             <Link className="underline text-gray-500" to="/">View gifs</Link>
         </div>
-    )
+    );
 }
 
 export default NothingInFavorites

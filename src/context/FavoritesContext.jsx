@@ -44,5 +44,5 @@ export const FavoritesProvider = ({ children }) => {
         }}>
             {children}
         </FavoritesContext.Provider>
-    )
+    );
 }

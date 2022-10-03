@@ -19,7 +19,7 @@ const Home = () => {
                 category={category}
             />
         </div>
-    )
+    );
 }
 
 export default Home

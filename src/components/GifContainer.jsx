@@ -5,8 +5,6 @@ import Spinner from "./Spinner";
 const GifGrid = ({ category }) => {
     const { gifs, isLoading } = useFetch(category);
 
-    console.log(gifs);
-    
     return (
         <div className="flex flex-col py-4">
             <h2 className="text-2xl font-semibold pt-4">Trending</h2>
@@ -23,7 +21,7 @@ const GifGrid = ({ category }) => {
                 ))
             }
         </div >
-    )
+    );
 }
 
 export default GifGrid

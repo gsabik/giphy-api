@@ -6,7 +6,7 @@ const NavBar = () => {
             <Link className="text-3xl font-bold" to="/">Giphy API</Link>
             <Link className="text-lg font-semibold" to="/favorites">Favorites</Link>
         </div>
-    )
+    );
 }
 
 export default NavBar
